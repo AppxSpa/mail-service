@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es"  xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -62,14 +62,23 @@
     <div class="container">
         <img src="cid:logoImagen" alt="Logo" class="logo" />
 
-        <h1>¡Hola, <span th:text="${nombre}"></span>!</h1>
-        <p class="text-muted">Tu solicitud  <span th:text="${idSolicitud}"></span>  tiene novedad</p>
+        <h1>¡Hola, <span th:text="${nombres}"></span>!</h1>
+        <p class="text-muted">Tu solicitud <span th:text="${idSolicitud}"></span>tiene novedades</p>
 
-        <p>Tu solicitud ha sido observada. Inicia Sesión en tu plataforma de vecino para obtener mas detalles</p>
+        <p>Tu solicitud ha sido observada.
+
+            <span th:text="${observacion}"></span>
+
+            Inicia Sesión en tu plataforma de vecino para obtener mas detalles haciendo clic en el siguiente botón:
+
+            <br>
+            <a th:href="${urlPlataforma}" class="btn-primary">Ir a Plataforma Vecino</a>
+            
+        </p>
 
 
         <p class="mt-4 text-secondary">
-            Si no realizaste esta solicitud, puedes ignorar este correo.  
+            Si no realizaste esta solicitud, puedes ignorar este correo.
             <br>Para más ayuda, contáctanos en <a href="mailto:soporte@appx.cl">soporte@appx.cl</a>.
         </p>
 

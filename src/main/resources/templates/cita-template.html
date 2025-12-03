@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="es" xml:lang="es" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -62,16 +62,16 @@
     <div class="container">
         <img src="cid:logoImagen" alt="Logo" class="logo" />
 
-        <h1>¡Hola, <span th:text="${nombre}"></span>!</h1>
+        <h1>¡Hola, <span th:text="${nombres}"></span>!</h1>
         <p class="text-muted">Tu cita ha sido confirmada con éxito.</p>
 
         <h3>📅 Detalles de tu cita:</h3>
-        <p><strong>Fecha:</strong> <span th:text="${fecha}"></span></p>
-        <p><strong>Hora:</strong> <span th:text="${hora}"></span></p>
+        <p><strong>Fecha:</strong> <span th:text="${fechaCita}"></span></p>
+        <p><strong>Hora:</strong> <span th:text="${horaCita}"></span></p>
 
 
         <p class="mt-4 text-secondary">
-            Si no realizaste esta solicitud, puedes ignorar este correo.  
+            Si no realizaste esta solicitud, puedes ignorar este correo.
             <br>Para más ayuda, contáctanos en <a href="mailto:soporte@appx.cl">soporte@appx.cl</a>.
         </p>
 

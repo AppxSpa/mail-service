@@ -63,9 +63,12 @@
         <img src="cid:logoImagen" alt="Logo" class="logo" />
 
         <h1>¡Hola, <span th:text="${nombres}"></span>!</h1>
-        <p class="text-muted">Tu solicitud se ha generado exitosamente.</p>
+        <p class="text-muted">Tu solicitud <span th:text="${idSolicitud}"></span> ha sido aprobada.</p>
 
-        <a th:href="${urlPlataforma}" class="btn btn-primary">Ver Solicitud</a>
+        Inicia Sesión en tu plataforma de vecino para obtener mas detalles haciendo clic en el siguiente botón:
+
+        <br>
+        <a th:href="${urlPlataforma}" class="btn-primary">Ir a Plataforma Vecino</a>
 
         <p class="mt-4 text-secondary">
             Si no realizaste esta solicitud, puedes ignorar este correo.
