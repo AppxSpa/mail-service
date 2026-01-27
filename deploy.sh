@@ -7,7 +7,7 @@ NOMBRE_APP="mail-service"
 PUERTO="8084"
 
 # CORRECCIÓN: Usar la organización AppxSpa en minúsculas
-IMAGEN_HUB="ghcr.io/appxspa/mail-servce" 
+IMAGEN_HUB="ghcr.io/appxspa/mail-service" 
 # =========================================================
 
 OPCION=${1:-"dev"}
